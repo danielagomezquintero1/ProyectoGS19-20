@@ -122,7 +122,7 @@ $captcha_string = generate_string($permitted_chars, $string_length);
                   </div>
                   <div class='form-group'>
                     <label>Email</label>
-                    <input type='text' class='form-control' name='email'id='email' maxlength='15' required>
+                    <input type='email' class='form-control' name='email'id='email' maxlength='15' required>
                     <div id='result-email'></div>
 
                   </div>
