@@ -514,11 +514,11 @@ if(!isset($_SESSION['user'])){
       </div>
       <div class="col-12" id="notificacion"></div>
       <div class=" col-12 col-lg-3">
-        <button type="button" data-toggle="modal" data-target="#agregaModal"style="color:black"class="btn btn-info mb-3"><img style="width:15%;" src="anadir.png"> Agregar un nuevo usuario</button>
+        <button type="button" data-toggle="modal" data-target="#agregaModal"style="color:black"class="btn btn-info mb-3"><img style="width:15%;" src="images/anadir.png"> Agregar un nuevo usuario</button>
       </div>
 
       <div class="col-12 col-lg-3">
-        <button type="button" data-toggle="modal" data-target="#agregaProductoModal"style="color:black"class="btn btn-warning mb-3"><img style="width:15%;" src="anadirr.png"> Agregar un nuevo producto a la tienda</button>
+        <button type="button" data-toggle="modal" data-target="#agregaProductoModal"style="color:black"class="btn btn-warning mb-3"><img style="width:15%;" src="images/anadirr.png"> Agregar un nuevo producto a la tienda</button>
       </div>
 
       <div class="col-12 col-lg-6 mt-5" style="color: white; text-align: right;">Buscar: 
