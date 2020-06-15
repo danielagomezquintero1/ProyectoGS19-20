@@ -554,7 +554,7 @@ if(!isset($_SESSION['user'])){
                 </div>
                 <b>Subir imagen de perfil</b> 
                 <label for="file-input">
-                  <img class="mt-2"src="subir.png" id="subirpng" width="10%;">
+                  <img class="mt-2"src="images/subir.png" id="subirpng" width="10%;">
                 </label>
                 <input id="file-input" type="file" name="file-input"  hidden="" />
                 <div class="col-12 m-3">
@@ -652,8 +652,8 @@ if(!isset($_SESSION['user'])){
               echo "<td>".$fila['signup_date']."</td>"; //TR CLASS para que cada fila tenga una clase diferente para cambiarla despues con ajax
               echo "<td class='d-none d-md-block fotoperfill'><img style='width:30%;'src='".$fila['avatar']."'></td>";
               ?>
-              <td><a data-toggle='modal' data-target='#modalEdicion' onclick="agregaform('<?php echo $datos?>')" class='btn btn-primary btn-sm'> <img id='editar' src='editaricon.png'> Modificar</a>
-                <?php echo"<a href='eliminar_user.php?id=".$fila['id']."' class='btn btn-danger btn-sm'><img id='eliminar' src='eliminar.png'> Eliminar </a>
+              <td><a data-toggle='modal' data-target='#modalEdicion' onclick="agregaform('<?php echo $datos?>')" class='btn btn-primary btn-sm'> <img id='editar' src='images/editaricon.png'> Modificar</a>
+                <?php echo"<a href='eliminar_user.php?id=".$fila['id']."' class='btn btn-danger btn-sm'><img id='eliminar' src='images/eliminar.png'> Eliminar </a>
                 </td>
                 </tr>";}?>
                 <!--FILA=ID PARA BORRAR UN USUARIO EN ESPECIFICO-->
@@ -722,8 +722,8 @@ if(!isset($_SESSION['user'])){
               echo "<td>".$fila['fecha']."</td>";
               echo "<td>".$fila['likes']."</td>";
               ?>
-              <td><a data-toggle='modal' data-target='#modalEdicion' onclick="agregaform('<?php echo $datos?>')" class='btn btn-primary'> <img id='editar' src='editaricon.png'> Modificar</a>
-                <?php echo"<a href='eliminar_user.php?id=".$fila['id']."' class='btn btn-danger'><img id='eliminar' src='eliminar.png'> Eliminar </a>
+              <td><a data-toggle='modal' data-target='#modalEdicion' onclick="agregaform('<?php echo $datos?>')" class='btn btn-primary'> <img id='editar' src='images/editaricon.png'> Modificar</a>
+                <?php echo"<a href='eliminar_user.php?id=".$fila['id']."' class='btn btn-danger'><img id='eliminar' src='images/eliminar.png'> Eliminar </a>
                 </td>
                 </tr>";}?>
                 <!--FILA=ID PARA BORRAR UN USUARIO EN ESPECIFICO-->
@@ -819,7 +819,7 @@ if(!isset($_SESSION['user'])){
           <div class="row">
             <div class="col-3 mt-4 p-2" style="background-color: tomato; color:white; border-radius: 15px;">
               <div class="row">
-                <div class="d-none d-lg-block col-md-4 mt-1"><img src="usuarios.png" style="width:80%;margin-left: 40%;"></div>
+                <div class="d-none d-lg-block col-md-4 mt-1"><img src="images/usuarios.png" style="width:80%;margin-left: 40%;"></div>
                 <div class="col-12 col-lg-8 mt-2"><h6 id="publi1">Total de usuarios registrados: 
                 <?php //mostramos los usuarios totales
                 $numusuarios =$conn->query("SELECT * FROM users");
@@ -833,7 +833,7 @@ if(!isset($_SESSION['user'])){
           
           <div class="col-3 ml-2 p-2 mt-4" style="background-color: #778899; color:white; border-radius: 15px;">
             <div class="row">
-              <div class="d-none d-lg-block col-md-4 mt-1"><img src="publicaciones.png" style="width:80%;margin-left: 40%;"></div>
+              <div class="d-none d-lg-block col-md-4 mt-1"><img src="images/publicaciones.png" style="width:80%;margin-left: 40%;"></div>
               <div class="col-12 col-lg-8 mt-2"><h6 id="publi">Publicaciones totales<br>
                 <?php
                 $numpublicaciones =$conn->query("SELECT * FROM publicaciones");
@@ -846,7 +846,7 @@ if(!isset($_SESSION['user'])){
           <!--------------------------------------------------------->
           <div class="col-3 ml-2 p-2 mt-4" style="background-color: #9ACD32; color:white; border-radius: 15px;">
             <div class="row">
-              <div class="d-none d-lg-block col-md-4 mt-1"><img src="comentarios.png" style="width:80%; margin-left: 40%;"></div>
+              <div class="d-none d-lg-block col-md-4 mt-1"><img src="images/comentarios.png" style="width:80%; margin-left: 40%;"></div>
               <div class="col-12 col-lg-8 mt-2"><h6>Comentarios totales<br>
                 <?php
                 $numpublicaciones =$conn->query("SELECT * FROM comentarios");
@@ -859,7 +859,7 @@ if(!isset($_SESSION['user'])){
           <!----------------------------------------------------------->
             <div class="col-2 ml-2 p-2 mt-4" style="background-color: #E9967A; color:white; border-radius: 15px;">
             <div class="row">
-              <div class="d-none d-lg-block col-md-4 mt-1"><img src="tienda.png" style="width:140%; margin-left: 40%;"></div>
+              <div class="d-none d-lg-block col-md-4 mt-1"><img src="images/tienda.png" style="width:140%; margin-left: 40%;"></div>
               <div class="col-12 col-lg-8 mt-4"><h6><a style="color:white;"href="tiendaproductos.php">TIENDA</a><br>
               </h6></div>
             </div>
