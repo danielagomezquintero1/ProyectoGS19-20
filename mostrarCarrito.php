@@ -77,7 +77,7 @@ include 'head.php';
 		<p>Ve a la tienda para comprar los mejores productos de nuestra página web!</p>
 	</div>
 	<div class="col-12 mt-5">
-		<img style="width:30%;"src="carritovacio.png">
+		<img style="width:30%;"src="images/carritovacio.png">
 	</div>
 <?php } ?>
 </div>
