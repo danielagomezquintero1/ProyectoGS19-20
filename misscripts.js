@@ -470,7 +470,19 @@ $('#registroform').submit(function(e) {
       });
     });
 //capthca
-
+ //compara el email
+    $('#email').on('blur', function() {
+      var email = $(this).val();   
+      var dataString = 'email='+email;
+      $.ajax({
+        type: "POST",
+        url: "check_email.php",
+        data: dataString,
+        success: function(data) {
+          $('#result-email').fadeIn(1000).html(data);
+        }
+      });
+    });
 
 $('#captcha').on('blur', function() {
  var captcha = $(this).val();   
