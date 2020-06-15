@@ -27,7 +27,8 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `archivos`
 --
-
+CREATE DATABASE uploadit;
+USE uploadit;
 CREATE TABLE `archivos` (
   `id` int(11) NOT NULL,
   `user` int(11) NOT NULL,
